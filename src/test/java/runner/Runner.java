@@ -16,8 +16,8 @@ import net.serenitybdd.cucumber.CucumberWithSerenity;
         format={"pretty", "html:test-output"},
         monochrome=true,
         dryRun=false,
-        strict=false
-        //tags ={"@Login1"}
+        strict=false,
+        tags ={"@SearchFlight1"}
 )
 public class Runner {
 

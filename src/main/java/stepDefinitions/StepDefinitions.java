@@ -81,6 +81,7 @@ public class StepDefinitions extends TestBase {
 	detailsPage.enter_details(name, address, city, state, zip, cardnumber, holder_name);
 	
 	}
+
     
     @Then("^User click on Purchase Flight$")
     public void purchase_flight() throws Throwable {
@@ -100,6 +101,13 @@ public class StepDefinitions extends TestBase {
     public void capture_booking() throws Throwable {
 
     	verifyPurcahsePage.get_bookingId();
+	
+	}
+    
+    @Then("^User verifies the message to fill details$")
+    public void verify_message() throws Throwable {
+
+    	verifyPurcahsePage.verify_message();
 	
 	}
     

@@ -1,1 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="Blaze Demo Book Flight" skipped="0" tests="4" time="103.21" timestamp="2020-08-239 08:59:05"><testcase name="Search Flight Scenario"/></testsuite>
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="1" name="Blaze Demo Book Flight" skipped="0" tests="1" time="16.04" timestamp="2020-08-239 09:19:14"><testcase name="Search Flight Scenario"><failure type="java.lang.AssertionError"/><system-err>null&#13;
+pages.VerifyPurcahsePage.verify_message(VerifyPurcahsePage.java:41)&#13;
+stepDefinitions.StepDefinitions.verify_message(StepDefinitions.java:110)&#13;
+✽.And User verifies the message to fill details(C:/Users/Abhi/workspace/CucumberSerenityFramework/resources/feature/bookFlight.feature:38)&#13;
+</system-err></testcase></testsuite>
