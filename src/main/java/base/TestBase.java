@@ -23,7 +23,7 @@ public class TestBase {
 	public static void initialization() {
 		
 		driver = new ChromeDriver();
-		driver.navigate().to("https://www.amazon.com/");
+		driver.navigate().to("http://blazedemo.com/");
      	driver.manage().window().maximize();
 		driver.manage().timeouts().pageLoadTimeout(20, TimeUnit.SECONDS);
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);

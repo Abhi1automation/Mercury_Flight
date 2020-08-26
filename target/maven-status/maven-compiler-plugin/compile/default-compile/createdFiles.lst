@@ -1,4 +1,3 @@
 base\TestBase.class
 stepDefinitions\StepDefinitions.class
-pages\LoginPage.class
-pages\SignInPage.class
+pages\HomePage.class

@@ -1,0 +1,66 @@
+<acceptance-test-run title="Search Flight Scenario" name="Search Flight Scenario" description="" steps="9" successful="9" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="35801" timestamp="2020-08-26T20:44:11.644+05:30">
+  <user-story id="blaze-demo-book-flight" name="Blaze Demo Book Flight" path="C:/Users/Abhi/workspace/CucumberSerenityFramework/resources/feature/login.feature"/>
+  <tags>
+    <tag name="Blaze Demo Book Flight" type="feature"/>
+    <tag name="FunctionalTest" type="tag"/>
+    <tag name="SearchFlight" type="tag"/>
+  </tags>
+  <examples>
+    <datasets>
+      <dataset startRow="0" rowCount="0" name="" description=""/>
+    </datasets>
+    <headers>
+      <header>from_city</header>
+      <header>to_city</header>
+      <header>name</header>
+      <header>address</header>
+      <header>city</header>
+      <header>state</header>
+      <header>zip</header>
+      <header>cardnumber</header>
+      <header>holder_name</header>
+    </headers>
+    <rows>
+      <row result="SUCCESS">
+        <value>Mexico City</value>
+        <value>London</value>
+        <value>Passenger1</value>
+        <value>Street 007</value>
+        <value>Bangalore</value>
+        <value>Karnataka</value>
+        <value>555555</value>
+        <value>12345</value>
+        <value>James Bond</value>
+      </row>
+    </rows>
+  </examples>
+  <test-group name="[1] {from_city=Mexico City, to_city=London, name=Passenger1, address=Street 007, city=Bangalore, state=Karnataka, zip=555555, cardnumber=12345, holder_name=James Bond}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="5867">
+      <description>Given User is on the Home Page</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="356">
+      <description>When User enters the &quot;Mexico City&quot; from_city</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="111">
+      <description>Then User enters the &quot;London&quot; to_city</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2335">
+      <description>And User clicks the Search button</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="968">
+      <description>And User choose a flight</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1624">
+      <description>And User enters &quot;Passenger1&quot;,&quot;Street 007&quot;,&quot;Bangalore&quot;,&quot;Karnataka&quot;,&quot;555555&quot;,&quot;12345&quot; and &quot;James Bond&quot;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1329">
+      <description>And User click on Purchase Flight</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="68">
+      <description>And User verifies the booking</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="40">
+      <description>And User captures the bookingId</description>
+    </test-step>
+  </test-group>
+</acceptance-test-run>

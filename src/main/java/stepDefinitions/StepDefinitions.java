@@ -1,22 +1,24 @@
 package stepDefinitions;
 
-import java.util.Map;
-
 import base.TestBase;
-import cucumber.api.DataTable;
 import cucumber.api.java.After;
 import cucumber.api.java.Before;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
-import pages.SignInPage;
-import pages.LoginPage;
+
+import pages.HomePage;
+import pages.ChooseFlightPage;
+import pages.DetailsPage;
+import pages.VerifyPurcahsePage;
 
 public class StepDefinitions extends TestBase {
 	
-	
-	SignInPage signinpage;
-	LoginPage loginpage;
+
+	HomePage homepage =new HomePage();
+	ChooseFlightPage chooseFlightPage = new ChooseFlightPage();
+	DetailsPage detailsPage = new DetailsPage();
+	VerifyPurcahsePage verifyPurcahsePage = new VerifyPurcahsePage();
 	
 	public StepDefinitions(){
 		super();
@@ -28,44 +30,77 @@ public class StepDefinitions extends TestBase {
 		TestBase.initialization();
 	}
 	
+	@After()
+	  public void tear_Down(){
+		
+		driver.quit();
+	}
 	
-	@Given("^User is on the Signin page$")
-	public void user_is_on_the_Signin_page() throws Throwable {
-		signinpage= new SignInPage();
-		signinpage.clickSignIn();
+	
+	@Given("^User is on the Home Page$")
+	public void user_is_on_the_home_page() throws Throwable {
+		
+		
+		homepage.validateTitle();
+		
 	    
 	}
 
-	@When("^User enters the username and password$")
-	public void user_enters_the_username_and_password(DataTable credentials) throws Throwable {
-		loginpage = new LoginPage();
-		for(Map<String,String>data:credentials.asMaps(String.class, String.class)){	
-		loginpage.Login(data.get("Username"), data.get("Password"));
-		//loginpage.click();
-		//driver.navigate().back();
-		//signinpage.clickSignIn();
+	@When("^User enters the \"([^\"]*)\" from_city$")
+	public void from_city(String fromcity) throws Throwable {
+	
+		homepage.dep_city(fromcity);
 		
 		}
 	    
-	}
 
-	@Then("^User clicks on the loginbutton$")
-	public void user_clicks_on_the_loginbutton() throws Throwable {
-		loginpage.click();
-		
-	   
-	}
+    @Then("^User enters the \"([^\"]*)\" to_city$")
+     public void to_city(String tocity) throws Throwable {
 
-	@Given("^User is on the HomePage$")
-	public void user_lands_on_the_HomePage() throws Throwable {
-		System.out.println(driver.getTitle());
-	}
+	homepage.dest_city(tocity);
 	
-	
-	@After
-	public void tear_down()
-	{
-		driver.quit();
 	}
+    
+    @Then("^User clicks the Search button$")
+    public void search() throws Throwable {
 
+	homepage.search();
+	
+	}
+    
+    @Then("^User choose a flight$")
+    public void choose_flight() throws Throwable {
+
+    	chooseFlightPage.chooseFlight();
+	
+	}
+    
+    @Then("^User enters \"([^\"]*)\",\"([^\"]*)\",\"([^\"]*)\",\"([^\"]*)\",\"([^\"]*)\",\"([^\"]*)\" and \"([^\"]*)\"$")
+    public void enter_details(String name,String address, String city, String state, String zip, String cardnumber, String holder_name) throws Throwable {
+
+	detailsPage.enter_details(name, address, city, state, zip, cardnumber, holder_name);
+	
+	}
+    
+    @Then("^User click on Purchase Flight$")
+    public void purchase_flight() throws Throwable {
+
+    	detailsPage.click_purchase();
+	
+	}
+    
+    @Then("^User verifies the booking$")
+    public void verify_booking() throws Throwable {
+
+    	verifyPurcahsePage.validate_Purchase();
+	
+	}
+    
+    @Then("^User captures the bookingId$")
+    public void capture_booking() throws Throwable {
+
+    	verifyPurcahsePage.get_bookingId();
+	
+	}
+    
 }
