@@ -68,10 +68,10 @@ public class StepDefinitions extends TestBase {
 	
 	}
     
-    @Then("^User choose a flight$")
-    public void choose_flight() throws Throwable {
+    @Then("^User choose the \"([^\"]*)\"$")
+    public void choose_flight(String flight_name) throws Throwable {
 
-    	chooseFlightPage.chooseFlight();
+    	chooseFlightPage.chooseFlight(flight_name);
 	
 	}
     

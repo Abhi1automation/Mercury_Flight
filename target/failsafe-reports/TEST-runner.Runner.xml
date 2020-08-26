@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="runner.Runner" time="42.556" tests="10" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="runner.Runner" time="108.593" tests="40" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_60\jre\bin"/>
@@ -25,7 +25,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="user.variant" value=""/>
     <property name="os.name" value="Windows 10"/>
-    <property name="classworlds.conf" value="C:\Users\Abhi\Desktop\Mercury_FlightBooking\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf4820736625324019409.tmp"/>
+    <property name="classworlds.conf" value="C:\Users\Abhi\Desktop\Mercury_FlightBooking\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf5097441674557959797.tmp"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
     <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_60\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Java/jre1.8.0_131/bin/server;C:/Program Files/Java/jre1.8.0_131/bin;C:/Program Files/Java/jre1.8.0_131/lib/amd64;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Lenovo\FusionEngine;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files (x86)\Lenovo\Motion Control\;C:\Program Files (x86)\Common Files\lenovo\easyplussdk\bin;C:\Program Files (x86)\Skype\Phone\;C:\Program Files\nodejs\;C:\Program Files (x86)\HPE\Unified Functional Testing\bin;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Amazon\AWSCLI\;C:\Program Files\Git\cmd;C:\Python_3.7.1\Scripts\;C:\Python_3.7.1\;C:\Users\Abhi\AppData\Local\Programs\Python\Python37-32\Scripts\;C:\Users\Abhi\AppData\Local\Programs\Python\Python37-32\;c:\python-3.6.2;C:\Users\Abhi\AppData\Roaming\npm;C:\Users\Abhi\AppData\Local\Microsoft\WindowsApps;C:\Users\Abhi\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\Java\jdk1.8.0_60\bin;C:\Program Files\apache-maven-3.5.3\bin;;C:\Users\Abhi\Desktop\Desktop;;."/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
@@ -60,14 +60,44 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="Given User is on the Home Page" classname="| Mexico City | London | Passenger1 | Street 007 | Bangalore | Karnataka | 555555 | 12345 | James Bond |" time="0.002"/>
-  <testcase name="When User enters the &quot;Mexico City&quot; from_city" classname="| Mexico City | London | Passenger1 | Street 007 | Bangalore | Karnataka | 555555 | 12345 | James Bond |" time="0"/>
-  <testcase name="Then User enters the &quot;London&quot; to_city" classname="| Mexico City | London | Passenger1 | Street 007 | Bangalore | Karnataka | 555555 | 12345 | James Bond |" time="0"/>
-  <testcase name="And User clicks the Search button" classname="| Mexico City | London | Passenger1 | Street 007 | Bangalore | Karnataka | 555555 | 12345 | James Bond |" time="0"/>
-  <testcase name="And User choose a flight" classname="| Mexico City | London | Passenger1 | Street 007 | Bangalore | Karnataka | 555555 | 12345 | James Bond |" time="0"/>
-  <testcase name="And User enters &quot;Passenger1&quot;,&quot;Street 007&quot;,&quot;Bangalore&quot;,&quot;Karnataka&quot;,&quot;555555&quot;,&quot;12345&quot; and &quot;James Bond&quot;" classname="| Mexico City | London | Passenger1 | Street 007 | Bangalore | Karnataka | 555555 | 12345 | James Bond |" time="0"/>
-  <testcase name="And User click on Purchase Flight" classname="| Mexico City | London | Passenger1 | Street 007 | Bangalore | Karnataka | 555555 | 12345 | James Bond |" time="0"/>
-  <testcase name="And User verifies the booking" classname="| Mexico City | London | Passenger1 | Street 007 | Bangalore | Karnataka | 555555 | 12345 | James Bond |" time="0"/>
-  <testcase name="And User captures the bookingId" classname="| Mexico City | London | Passenger1 | Street 007 | Bangalore | Karnataka | 555555 | 12345 | James Bond |" time="0"/>
-  <testcase name="| Mexico City | London | Passenger1 | Street 007 | Bangalore | Karnataka | 555555 | 12345 | James Bond |" classname="| Mexico City | London | Passenger1 | Street 007 | Bangalore | Karnataka | 555555 | 12345 | James Bond |" time="5.582"/>
+  <testcase name="Given User is on the Home Page" classname="| Mexico City | London | Passenger1 | Street 007 | Bangalore | Karnataka | 555555 | 12345 | James Bond | Lufthansa |" time="0.003"/>
+  <testcase name="When User enters the &quot;Mexico City&quot; from_city" classname="| Mexico City | London | Passenger1 | Street 007 | Bangalore | Karnataka | 555555 | 12345 | James Bond | Lufthansa |" time="0"/>
+  <testcase name="Then User enters the &quot;London&quot; to_city" classname="| Mexico City | London | Passenger1 | Street 007 | Bangalore | Karnataka | 555555 | 12345 | James Bond | Lufthansa |" time="0"/>
+  <testcase name="And User clicks the Search button" classname="| Mexico City | London | Passenger1 | Street 007 | Bangalore | Karnataka | 555555 | 12345 | James Bond | Lufthansa |" time="0"/>
+  <testcase name="And User choose the &quot;Lufthansa&quot;" classname="| Mexico City | London | Passenger1 | Street 007 | Bangalore | Karnataka | 555555 | 12345 | James Bond | Lufthansa |" time="0"/>
+  <testcase name="And User enters &quot;Passenger1&quot;,&quot;Street 007&quot;,&quot;Bangalore&quot;,&quot;Karnataka&quot;,&quot;555555&quot;,&quot;12345&quot; and &quot;James Bond&quot;" classname="| Mexico City | London | Passenger1 | Street 007 | Bangalore | Karnataka | 555555 | 12345 | James Bond | Lufthansa |" time="0"/>
+  <testcase name="And User click on Purchase Flight" classname="| Mexico City | London | Passenger1 | Street 007 | Bangalore | Karnataka | 555555 | 12345 | James Bond | Lufthansa |" time="0"/>
+  <testcase name="And User verifies the booking" classname="| Mexico City | London | Passenger1 | Street 007 | Bangalore | Karnataka | 555555 | 12345 | James Bond | Lufthansa |" time="0"/>
+  <testcase name="And User captures the bookingId" classname="| Mexico City | London | Passenger1 | Street 007 | Bangalore | Karnataka | 555555 | 12345 | James Bond | Lufthansa |" time="0"/>
+  <testcase name="| Mexico City | London | Passenger1 | Street 007 | Bangalore | Karnataka | 555555 | 12345 | James Bond | Lufthansa |" classname="| Mexico City | London | Passenger1 | Street 007 | Bangalore | Karnataka | 555555 | 12345 | James Bond | Lufthansa |" time="3.664"/>
+  <testcase name="Given User is on the Home Page" classname="| Paris | Rome | Passenger1 | Street 007 | Bangalore | Karnataka | 555555 | 12345 | James Bond | Virgin America |" time="0"/>
+  <testcase name="When User enters the &quot;Paris&quot; from_city" classname="| Paris | Rome | Passenger1 | Street 007 | Bangalore | Karnataka | 555555 | 12345 | James Bond | Virgin America |" time="0"/>
+  <testcase name="Then User enters the &quot;Rome&quot; to_city" classname="| Paris | Rome | Passenger1 | Street 007 | Bangalore | Karnataka | 555555 | 12345 | James Bond | Virgin America |" time="0"/>
+  <testcase name="And User clicks the Search button" classname="| Paris | Rome | Passenger1 | Street 007 | Bangalore | Karnataka | 555555 | 12345 | James Bond | Virgin America |" time="0"/>
+  <testcase name="And User choose the &quot;Virgin America&quot;" classname="| Paris | Rome | Passenger1 | Street 007 | Bangalore | Karnataka | 555555 | 12345 | James Bond | Virgin America |" time="0"/>
+  <testcase name="And User enters &quot;Passenger1&quot;,&quot;Street 007&quot;,&quot;Bangalore&quot;,&quot;Karnataka&quot;,&quot;555555&quot;,&quot;12345&quot; and &quot;James Bond&quot;" classname="| Paris | Rome | Passenger1 | Street 007 | Bangalore | Karnataka | 555555 | 12345 | James Bond | Virgin America |" time="0"/>
+  <testcase name="And User click on Purchase Flight" classname="| Paris | Rome | Passenger1 | Street 007 | Bangalore | Karnataka | 555555 | 12345 | James Bond | Virgin America |" time="0"/>
+  <testcase name="And User verifies the booking" classname="| Paris | Rome | Passenger1 | Street 007 | Bangalore | Karnataka | 555555 | 12345 | James Bond | Virgin America |" time="0"/>
+  <testcase name="And User captures the bookingId" classname="| Paris | Rome | Passenger1 | Street 007 | Bangalore | Karnataka | 555555 | 12345 | James Bond | Virgin America |" time="0"/>
+  <testcase name="| Paris | Rome | Passenger1 | Street 007 | Bangalore | Karnataka | 555555 | 12345 | James Bond | Virgin America |" classname="| Paris | Rome | Passenger1 | Street 007 | Bangalore | Karnataka | 555555 | 12345 | James Bond | Virgin America |" time="3.95"/>
+  <testcase name="Given User is on the Home Page" classname="| Boston | Berlin | Passenger1 | Street 007 | Bangalore | Karnataka | 555555 | 12345 | James Bond | United Airlines |" time="0.003"/>
+  <testcase name="When User enters the &quot;Boston&quot; from_city" classname="| Boston | Berlin | Passenger1 | Street 007 | Bangalore | Karnataka | 555555 | 12345 | James Bond | United Airlines |" time="0"/>
+  <testcase name="Then User enters the &quot;Berlin&quot; to_city" classname="| Boston | Berlin | Passenger1 | Street 007 | Bangalore | Karnataka | 555555 | 12345 | James Bond | United Airlines |" time="0"/>
+  <testcase name="And User clicks the Search button" classname="| Boston | Berlin | Passenger1 | Street 007 | Bangalore | Karnataka | 555555 | 12345 | James Bond | United Airlines |" time="0"/>
+  <testcase name="And User choose the &quot;United Airlines&quot;" classname="| Boston | Berlin | Passenger1 | Street 007 | Bangalore | Karnataka | 555555 | 12345 | James Bond | United Airlines |" time="0"/>
+  <testcase name="And User enters &quot;Passenger1&quot;,&quot;Street 007&quot;,&quot;Bangalore&quot;,&quot;Karnataka&quot;,&quot;555555&quot;,&quot;12345&quot; and &quot;James Bond&quot;" classname="| Boston | Berlin | Passenger1 | Street 007 | Bangalore | Karnataka | 555555 | 12345 | James Bond | United Airlines |" time="0"/>
+  <testcase name="And User click on Purchase Flight" classname="| Boston | Berlin | Passenger1 | Street 007 | Bangalore | Karnataka | 555555 | 12345 | James Bond | United Airlines |" time="0"/>
+  <testcase name="And User verifies the booking" classname="| Boston | Berlin | Passenger1 | Street 007 | Bangalore | Karnataka | 555555 | 12345 | James Bond | United Airlines |" time="0"/>
+  <testcase name="And User captures the bookingId" classname="| Boston | Berlin | Passenger1 | Street 007 | Bangalore | Karnataka | 555555 | 12345 | James Bond | United Airlines |" time="0"/>
+  <testcase name="| Boston | Berlin | Passenger1 | Street 007 | Bangalore | Karnataka | 555555 | 12345 | James Bond | United Airlines |" classname="| Boston | Berlin | Passenger1 | Street 007 | Bangalore | Karnataka | 555555 | 12345 | James Bond | United Airlines |" time="0.981"/>
+  <testcase name="Given User is on the Home Page" classname="| Portland | Dublin | Passenger1 | Street 007 | Bangalore | Karnataka | 555555 | 12345 | James Bond | Aer Lingus |" time="0"/>
+  <testcase name="When User enters the &quot;Portland&quot; from_city" classname="| Portland | Dublin | Passenger1 | Street 007 | Bangalore | Karnataka | 555555 | 12345 | James Bond | Aer Lingus |" time="0"/>
+  <testcase name="Then User enters the &quot;Dublin&quot; to_city" classname="| Portland | Dublin | Passenger1 | Street 007 | Bangalore | Karnataka | 555555 | 12345 | James Bond | Aer Lingus |" time="0"/>
+  <testcase name="And User clicks the Search button" classname="| Portland | Dublin | Passenger1 | Street 007 | Bangalore | Karnataka | 555555 | 12345 | James Bond | Aer Lingus |" time="0"/>
+  <testcase name="And User choose the &quot;Aer Lingus&quot;" classname="| Portland | Dublin | Passenger1 | Street 007 | Bangalore | Karnataka | 555555 | 12345 | James Bond | Aer Lingus |" time="0"/>
+  <testcase name="And User enters &quot;Passenger1&quot;,&quot;Street 007&quot;,&quot;Bangalore&quot;,&quot;Karnataka&quot;,&quot;555555&quot;,&quot;12345&quot; and &quot;James Bond&quot;" classname="| Portland | Dublin | Passenger1 | Street 007 | Bangalore | Karnataka | 555555 | 12345 | James Bond | Aer Lingus |" time="0"/>
+  <testcase name="And User click on Purchase Flight" classname="| Portland | Dublin | Passenger1 | Street 007 | Bangalore | Karnataka | 555555 | 12345 | James Bond | Aer Lingus |" time="0"/>
+  <testcase name="And User verifies the booking" classname="| Portland | Dublin | Passenger1 | Street 007 | Bangalore | Karnataka | 555555 | 12345 | James Bond | Aer Lingus |" time="0"/>
+  <testcase name="And User captures the bookingId" classname="| Portland | Dublin | Passenger1 | Street 007 | Bangalore | Karnataka | 555555 | 12345 | James Bond | Aer Lingus |" time="0"/>
+  <testcase name="| Portland | Dublin | Passenger1 | Street 007 | Bangalore | Karnataka | 555555 | 12345 | James Bond | Aer Lingus |" classname="| Portland | Dublin | Passenger1 | Street 007 | Bangalore | Karnataka | 555555 | 12345 | James Bond | Aer Lingus |" time="4.08"/>
 </testsuite>

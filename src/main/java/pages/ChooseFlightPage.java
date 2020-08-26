@@ -23,7 +23,7 @@ public class ChooseFlightPage extends TestBase {
 	
 
 
-	public void chooseFlight(){
+	public void chooseFlight(String flight_name){
 		
 		WebElement table=driver.findElement(By.className("table"));
 		int row_count=table.findElements(By.tagName("tr")).size();
@@ -36,9 +36,7 @@ public class ChooseFlightPage extends TestBase {
 			
 			String name= driver.findElement(By.xpath(before+i+after_name)).getText();
 			
-			if(name.equals("United Airlines")){
-				
-				System.out.println("Inside if");
+			if(name.equals(flight_name)){
 		
 				driver.findElement(By.xpath(before+i+after_button)).click();
 				

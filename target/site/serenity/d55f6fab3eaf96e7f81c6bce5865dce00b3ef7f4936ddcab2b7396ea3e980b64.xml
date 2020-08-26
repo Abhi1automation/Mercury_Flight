@@ -1,0 +1,191 @@
+<acceptance-test-run title="Search Flight Scenario" name="Search Flight Scenario" description="" steps="36" successful="36" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="103211" timestamp="2020-08-26T20:59:05.496+05:30">
+  <user-story id="blaze-demo-book-flight" name="Blaze Demo Book Flight" path="C:/Users/Abhi/workspace/CucumberSerenityFramework/resources/feature/bookFlight.feature"/>
+  <tags>
+    <tag name="Blaze Demo Book Flight" type="feature"/>
+    <tag name="FunctionalTest" type="tag"/>
+    <tag name="SearchFlight" type="tag"/>
+  </tags>
+  <examples>
+    <datasets>
+      <dataset startRow="0" rowCount="0" name="" description=""/>
+    </datasets>
+    <headers>
+      <header>from_city</header>
+      <header>to_city</header>
+      <header>name</header>
+      <header>address</header>
+      <header>city</header>
+      <header>state</header>
+      <header>zip</header>
+      <header>cardnumber</header>
+      <header>holder_name</header>
+      <header>flight_name</header>
+    </headers>
+    <rows>
+      <row result="SUCCESS">
+        <value>Mexico City</value>
+        <value>London</value>
+        <value>Passenger1</value>
+        <value>Street 007</value>
+        <value>Bangalore</value>
+        <value>Karnataka</value>
+        <value>555555</value>
+        <value>12345</value>
+        <value>James Bond</value>
+        <value>Lufthansa</value>
+      </row>
+      <row result="SUCCESS">
+        <value>Paris</value>
+        <value>Rome</value>
+        <value>Passenger1</value>
+        <value>Street 007</value>
+        <value>Bangalore</value>
+        <value>Karnataka</value>
+        <value>555555</value>
+        <value>12345</value>
+        <value>James Bond</value>
+        <value>Virgin America</value>
+      </row>
+      <row result="SUCCESS">
+        <value>Boston</value>
+        <value>Berlin</value>
+        <value>Passenger1</value>
+        <value>Street 007</value>
+        <value>Bangalore</value>
+        <value>Karnataka</value>
+        <value>555555</value>
+        <value>12345</value>
+        <value>James Bond</value>
+        <value>United Airlines</value>
+      </row>
+      <row result="SUCCESS">
+        <value>Portland</value>
+        <value>Dublin</value>
+        <value>Passenger1</value>
+        <value>Street 007</value>
+        <value>Bangalore</value>
+        <value>Karnataka</value>
+        <value>555555</value>
+        <value>12345</value>
+        <value>James Bond</value>
+        <value>Aer Lingus</value>
+      </row>
+    </rows>
+  </examples>
+  <test-group name="[1] {from_city=Mexico City, to_city=London, name=Passenger1, address=Street 007, city=Bangalore, state=Karnataka, zip=555555, cardnumber=12345, holder_name=James Bond, flight_name=Lufthansa}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="2370">
+      <description>Given User is on the Home Page</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="246">
+      <description>When User enters the &quot;Mexico City&quot; from_city</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="119">
+      <description>Then User enters the &quot;London&quot; to_city</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1514">
+      <description>And User clicks the Search button</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1149">
+      <description>And User choose the &quot;Lufthansa&quot;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1895">
+      <description>And User enters &quot;Passenger1&quot;,&quot;Street 007&quot;,&quot;Bangalore&quot;,&quot;Karnataka&quot;,&quot;555555&quot;,&quot;12345&quot; and &quot;James Bond&quot;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="879">
+      <description>And User click on Purchase Flight</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="74">
+      <description>And User verifies the booking</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="61">
+      <description>And User captures the bookingId</description>
+    </test-step>
+  </test-group>
+  <test-group name="[1] {from_city=Paris, to_city=Rome, name=Passenger1, address=Street 007, city=Bangalore, state=Karnataka, zip=555555, cardnumber=12345, holder_name=James Bond, flight_name=Virgin America}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="9">
+      <description>Given User is on the Home Page</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="226">
+      <description>When User enters the &quot;Paris&quot; from_city</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="119">
+      <description>Then User enters the &quot;Rome&quot; to_city</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1299">
+      <description>And User clicks the Search button</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="823">
+      <description>And User choose the &quot;Virgin America&quot;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1211">
+      <description>And User enters &quot;Passenger1&quot;,&quot;Street 007&quot;,&quot;Bangalore&quot;,&quot;Karnataka&quot;,&quot;555555&quot;,&quot;12345&quot; and &quot;James Bond&quot;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1063">
+      <description>And User click on Purchase Flight</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="136">
+      <description>And User verifies the booking</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="46">
+      <description>And User captures the bookingId</description>
+    </test-step>
+  </test-group>
+  <test-group name="[1] {from_city=Boston, to_city=Berlin, name=Passenger1, address=Street 007, city=Bangalore, state=Karnataka, zip=555555, cardnumber=12345, holder_name=James Bond, flight_name=United Airlines}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="19">
+      <description>Given User is on the Home Page</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="116">
+      <description>When User enters the &quot;Boston&quot; from_city</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="94">
+      <description>Then User enters the &quot;Berlin&quot; to_city</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="639">
+      <description>And User clicks the Search button</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="667">
+      <description>And User choose the &quot;United Airlines&quot;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="886">
+      <description>And User enters &quot;Passenger1&quot;,&quot;Street 007&quot;,&quot;Bangalore&quot;,&quot;Karnataka&quot;,&quot;555555&quot;,&quot;12345&quot; and &quot;James Bond&quot;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="558">
+      <description>And User click on Purchase Flight</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="81">
+      <description>And User verifies the booking</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="41">
+      <description>And User captures the bookingId</description>
+    </test-step>
+  </test-group>
+  <test-group name="[1] {from_city=Portland, to_city=Dublin, name=Passenger1, address=Street 007, city=Bangalore, state=Karnataka, zip=555555, cardnumber=12345, holder_name=James Bond, flight_name=Aer Lingus}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="13">
+      <description>Given User is on the Home Page</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="87">
+      <description>When User enters the &quot;Portland&quot; from_city</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="108">
+      <description>Then User enters the &quot;Dublin&quot; to_city</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="538">
+      <description>And User clicks the Search button</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="848">
+      <description>And User choose the &quot;Aer Lingus&quot;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="950">
+      <description>And User enters &quot;Passenger1&quot;,&quot;Street 007&quot;,&quot;Bangalore&quot;,&quot;Karnataka&quot;,&quot;555555&quot;,&quot;12345&quot; and &quot;James Bond&quot;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="630">
+      <description>And User click on Purchase Flight</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="78">
+      <description>And User verifies the booking</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="40">
+      <description>And User captures the bookingId</description>
+    </test-step>
+  </test-group>
+</acceptance-test-run>

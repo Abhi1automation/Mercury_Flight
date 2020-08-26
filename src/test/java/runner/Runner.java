@@ -11,7 +11,7 @@ import net.serenitybdd.cucumber.CucumberWithSerenity;
 @RunWith(CucumberWithSerenity.class)
 @CucumberOptions(
 
-		features = {"C:\\Users\\Abhi\\workspace\\CucumberSerenityFramework\\resources\\feature\\login.feature"},
+		features = {"C:\\Users\\Abhi\\workspace\\CucumberSerenityFramework\\resources\\feature\\bookFlight.feature"},
 		glue={"stepDefinitions"},
         format={"pretty", "html:test-output"},
         monochrome=true,
